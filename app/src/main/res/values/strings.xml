@@ -1,0 +1,74 @@
+<resources>
+
+    <string name="app_name">SFJA Media</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="sources_name">Sources</string>
+    <string name="contactshort">Contact</string>
+    <string name="contactlong">Contact SFJA Media</string>
+    <string name="contactdisabled">Disabled</string>
+
+    <!-- Home Page -->
+
+    <string name="title_the_goal">The Goal</string>
+    <string name="title_fair_prices">Fair Prices</string>
+    <string name="title_what_is_foodie_thing">FoodieThing</string>
+
+    <string name="title_previous_clients">Some Previous Clients</string>
+
+    <string name="title_reviews">Reviews</string>
+    <string name="title_donut_digest">Donut Digest</string>
+    <string name="title_boston_foodie">Boston Foodie</string>
+    <string name="title_freed_goods">Freed Goods</string>
+    <string name="title_vivre_bakery">Vivre Bakery</string>
+    <string name="title_shogun">Shogun</string>
+
+    <string name="body_donut_digest">Jonah and his team were easy to work with and eager to assist with my brand\'s exposure. Thank you for the opportunity!</string>
+    <string name="body_the_goal">SFJA Media is dedicated to helping companies of all sizes reach as many clients as possible to help their business grow. We trust that our techniques are superior to other social media marketing companies who choose to follow the norm. We know how to get our clients in front of thousands of potential customers. Across social media, we have amassed over 7 million views. Promoting your product on one of our pages is sure to garner many views.</string>
+    <string name="body_the_goal2">SFJA Media can help you in many ways, offering a variety of services, such as hyper-targeted, or boosted ads. With our one-on-one work with clients we get to know exactly what you\'re looking for and how you\'d like to expand. We make sure to create effective systems and schedules in regards to your digital media and other targeted online content. In the past, we\'ve worked with certain brands including: Wok To Walk, Elago, Goatcase, and many others.</string>
+    <string name="body_fair_prices">We believe strongly in only charging for the services used, so our prices are made very clear once contact is established with each and every client, all taxes and fees are always included, so there are no surprises that you won\'t know about.</string>
+    <string name="body_boston_foodie">Thanks so much Jonah and Andrew for helping me cross 1,000 followers! I’m super happy with the service you guys offered me!</string>
+    <string name="body_shogun">Working with SFJA Media really helped increase our customer base! Thank you Jonah and Andrew!</string>
+    <string name="body_vivre_bakery">It is always such a pleasure working with Jonah and Andrew at SFJA Media. They truly understand our brand and have killer content.</string>
+    <string name="body_freed_goods">Working with Jonah and Andrew was a great decision. At the start, I didn\'t know much about marketing on social media.</string>
+
+    <string name="person_donut_digest">-Rory</string>
+    <string name="person_boston_foodie">-Nicki Macedo</string>
+    <string name="person_shogun">-Joshua Nguyen, Shogun Restaurants</string>
+    <string name="person_vivre_bakery">-Marissa, founder of Vivre Bakery</string>
+    <string name="person_freed_goods">-@FreedGoods</string>
+
+    <!-- FoodieThing Page -->
+
+    <string name="foodiething">FoodieThing</string>
+
+    <string name="title_content">Content</string>
+    <string name="title_reach">Reach</string>
+    <string name="title_some_previous_clients">Some Previous clients</string>
+    <string name="title_stories">Stories</string>
+    <string name="title_submissions">Submissions</string>
+
+    <string name="body_what_is_foodie_thing">Foodie Thing is an Instagram page that curates the most gorgeous photos and videos of food from araound the world. We aren\'t foodie snobs, we are food inclusive and want to post pictures that capture all types of daily food cravings. Wether it\'s green, fried or smothered in hot fudge- we\'ve got you covered.</string>
+    <string name="body_content">Foodie Thing is obsessed with all things food and graciously borrows its images from what it finds online, along with amazing photos that are re-posted (and credited) from other food-focused Instagram accounts.</string>
+    <string name="body_reach">Foodie Thing has a lasting impression on every Instagram user that discovers the page. Currently with over 60,000 followers, the Foodie Fam is rapidly growing. @FoodieThing, on average receives over 800,000 impressions per week.</string>
+    <string name="body_submissions">We love to feature good eats from all over the world. If there is a photo that you would like to us to consider posting on the Foodie Thing Instagram channel please send a direct message to @FoodieThing on Instagram with the photo you would like to be featured.</string>
+    <string name="body_stories">Every day Foodie Thing posts a lengthy story that highlights the best of the channel. Take a food journey with the team as they post all day on @FoodieThing. Experience exclusive content, milestone achievement awards, bonus photos and even giveaways. @FoodieThing\'s daily story is not something you\'ll want to miss.</string>
+
+
+
+    <!-- Links Page -->
+    <string name="title_our_website">Our Website</string>
+    <string name="visit_our_website">Visit</string>
+    <string name="visit_foodie_insta">Visit</string>
+    <string name="title_sfja_store">SFJA Store</string>
+    <string name="visit_sfja_store">Visit</string>
+    <string name="title_foodie_apparel">Foodie Apparel</string>
+    <string name="visit_foodie_apparel">Visit</string>
+    <string name="open_source_string">Open source software used</string>
+
+
+    <!-- Sources Page -->
+    <string name="txtandroidktx"><a href="https://developer.android.com/kotlin/ktx.html">Android KTX</a></string>
+    <string name="txtnavigation"><a href="https://developer.android.com/topic/libraries/architecture/navigation.html">Navigation</a></string>
+    <string name="txtmaterial"><a href="https://material.io">Google Material Design</a></string>
+    <string name="txtmaterialicons"><a href="https://github.com/google/material-design-icons">Material Icons</a></string>
+</resources>

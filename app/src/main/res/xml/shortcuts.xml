@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="compose"
+        android:enabled="true"
+        android:icon="@drawable/ic_mail"
+        android:shortcutShortLabel="@string/contactshort"
+        android:shortcutLongLabel="@string/contactlong"
+        android:shortcutDisabledMessage="@string/contactdisabled">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.sfjamedia.android"
+            android:targetClass="com.sfjamedia.android.ContactActivity" />
+
+    </shortcut>
+</shortcuts>
