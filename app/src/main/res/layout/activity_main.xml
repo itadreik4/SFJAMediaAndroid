@@ -19,7 +19,7 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             app:titleTextAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-            app:titleTextColor="@color/colorPrimary" />
+            app:titleTextColor="@color/colorPrimaryDark" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <fragment
@@ -38,6 +38,8 @@
         android:layout_height="52dp"
         android:layout_gravity="bottom"
         android:background="#eee"
+        app:itemIconTint="@color/selector_bottom_nav_item"
+        app:itemTextColor="@color/selector_bottom_nav_item"
         app:labelVisibilityMode="labeled"
         app:menu="@menu/bottomnav_menu" />
 
