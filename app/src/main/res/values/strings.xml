@@ -1,7 +1,6 @@
 <resources>
 
     <string name="app_name">SFJA Media</string>
-    <string name="title_activity_settings">Settings</string>
     <string name="sources_name">Sources</string>
     <string name="contactshort">Contact</string>
     <string name="contactlong">Contact SFJA Media</string>
@@ -12,9 +11,7 @@
     <string name="title_the_goal">The Goal</string>
     <string name="title_fair_prices">Fair Prices</string>
     <string name="title_what_is_foodie_thing">FoodieThing</string>
-
     <string name="title_previous_clients">Some Previous Clients</string>
-
     <string name="title_reviews">Reviews</string>
     <string name="title_donut_digest">Donut Digest</string>
     <string name="title_boston_foodie">Boston Foodie</string>
