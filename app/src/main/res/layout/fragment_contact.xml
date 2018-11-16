@@ -3,10 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/contact_scroll"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:overScrollMode="always"
-    android:scrollIndicators="none"
-    android:scrollbars="none">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

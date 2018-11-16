@@ -4,10 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/foodie_scroll"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:overScrollMode="always"
-    android:scrollIndicators="none"
-    android:scrollbars="none">
+    android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -87,7 +84,6 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent">
-
 
                 <VideoView
                     android:id="@+id/videoView1"
