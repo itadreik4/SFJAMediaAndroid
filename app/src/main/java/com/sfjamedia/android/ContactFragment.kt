@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.google.android.material.button.MaterialButton
+import kotlinx.android.synthetic.main.fragment_contact.*
 
 
 class ContactFragment : Fragment() {
@@ -25,9 +25,8 @@ class ContactFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val bundle = Bundle()
 
-        view.findViewById<MaterialButton>(R.id.send_message).setOnClickListener {
+        send_message.setOnClickListener {
             val nameString = view.findViewById<EditText>(R.id.name_text).text.toString()
             val emailString = view.findViewById<EditText>(R.id.email_text).text.toString()
             val messageString = view.findViewById<EditText>(R.id.message_text).text.toString()
