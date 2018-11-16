@@ -10,8 +10,6 @@ import androidx.navigation.ui.setupWithNavController
 import kotlinx.android.synthetic.main.activity_main.*
 
 
-
-
 class MainActivity : AppCompatActivity(), LinksFragment.OnFragmentInteractionListener,
         ContactFragment.OnFragmentInteractionListener,
         FoodieFragment.OnFragmentInteractionListener,
@@ -22,8 +20,8 @@ class MainActivity : AppCompatActivity(), LinksFragment.OnFragmentInteractionLis
 
         super.onCreate(savedInstanceState)
         val nightModeFlags = this.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
-        when (nightModeFlags) {
-            Configuration.UI_MODE_NIGHT_NO -> View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+        if (nightModeFlags == Configuration.UI_MODE_NIGHT_NO) {
+            window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         }
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
