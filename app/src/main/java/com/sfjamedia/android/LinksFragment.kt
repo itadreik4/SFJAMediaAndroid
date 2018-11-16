@@ -17,7 +17,6 @@ class LinksFragment : Fragment() {
 
     private var mListener: OnFragmentInteractionListener? = null
 
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_links, container, false)
@@ -50,10 +49,6 @@ class LinksFragment : Fragment() {
         contentFrameLayout4.setOnClickListener {
             startActivity(Intent(Intent.ACTION_VIEW,
                     Uri.parse("https://sfjamedia.com/merch")))
-        }
-
-        opensoftware.setOnClickListener {
-            startActivity(Intent(activity, SourcesActivity::class.java))
         }
     }
 

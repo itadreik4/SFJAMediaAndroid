@@ -1,12 +1,11 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowLightStatusBar">true</item>
-        <item name="android:statusBarColor">#eee</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
         <item name="colorControlHighlight">@color/colorPrimaryDark</item>
     </style>
 
@@ -15,7 +14,13 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat.Light.NoActionBar" />
-    <style name="AppTheme.PopupOverlay" parent="Theme.AppCompat.Light" />
+    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat.DayNight.NoActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="Theme.AppCompat.DayNight" />
+
+    <style name="MyTextViewStyle" parent="MyBaseTextViewStyle">
+        <item name="android:hyphenationFrequency">none</item>
+    </style>
+
+    <style name="MyBaseTextViewStyle" parent="android:Widget.TextView"/>
 
 </resources>

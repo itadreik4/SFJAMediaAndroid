@@ -19,10 +19,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/san_francisco"
             android:text="@string/title_the_goal"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -33,10 +31,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            android:fontFamily="@font/san_francisco"
             android:text="@string/body_the_goal"
-            android:textColor="@color/colorAccent"
-            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/thegoaltitle" />
@@ -47,10 +43,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
-            android:fontFamily="@font/san_francisco"
             android:text="@string/body_the_goal2"
-            android:textColor="@color/colorAccent"
-            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/thegoalbody1" />
@@ -60,6 +54,7 @@
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
             android:layout_marginRight="8dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
@@ -72,10 +67,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
-            android:fontFamily="@font/san_francisco"
             android:text="@string/title_reviews"
-            android:textColor="@android:color/black"
-            android:textSize="24sp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/divider3" />
@@ -116,7 +109,7 @@
                         <ImageView
                             android:id="@+id/imageView20"
                             android:layout_width="0dp"
-                            android:layout_height="130dp"
+                            android:layout_height="140dp"
                             android:scaleType="centerCrop"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -145,9 +138,8 @@
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
                             android:layout_marginEnd="8dp"
-                            android:fontFamily="@font/san_francisco"
                             android:text="@string/body_donut_digest"
-                            android:textSize="14sp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView20" />
@@ -158,9 +150,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginBottom="44dp"
-                            android:fontFamily="@font/san_francisco"
                             android:text="@string/person_donut_digest"
-                            android:textSize="12sp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView21" />
@@ -187,7 +178,7 @@
                         <ImageView
                             android:id="@+id/imageView21"
                             android:layout_width="0dp"
-                            android:layout_height="130dp"
+                            android:layout_height="140dp"
                             android:scaleType="centerCrop"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -215,9 +206,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/san_francisco"
                             android:text="@string/body_boston_foodie"
-                            android:textSize="14sp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView23" />
@@ -227,9 +217,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
-                            android:fontFamily="@font/san_francisco"
                             android:text="@string/person_boston_foodie"
-                            android:textSize="12sp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView24" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -256,7 +245,7 @@
                         <ImageView
                             android:id="@+id/imageView22"
                             android:layout_width="0dp"
-                            android:layout_height="130dp"
+                            android:layout_height="140dp"
                             android:scaleType="centerCrop"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -284,9 +273,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/san_francisco"
                             android:text="@string/body_shogun"
-                            android:textSize="14sp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView27" />
@@ -296,9 +284,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
-                            android:fontFamily="@font/san_francisco"
                             android:text="@string/person_shogun"
-                            android:textSize="12sp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView28" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -325,7 +312,7 @@
                         <ImageView
                             android:id="@+id/imageView23"
                             android:layout_width="0dp"
-                            android:layout_height="130dp"
+                            android:layout_height="140dp"
                             android:scaleType="centerCrop"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -353,9 +340,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/san_francisco"
                             android:text="@string/body_vivre_bakery"
-                            android:textSize="14sp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView30" />
@@ -365,9 +351,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
-                            android:fontFamily="@font/san_francisco"
                             android:text="@string/person_vivre_bakery"
-                            android:textSize="12sp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
@@ -381,9 +366,11 @@
                     android:layout_height="280dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
                     android:layout_marginBottom="8dp"
                     app:cardCornerRadius="6dp"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/card13"
                     app:layout_constraintTop_toTopOf="parent">
 
@@ -394,7 +381,7 @@
                         <ImageView
                             android:id="@+id/imageView24"
                             android:layout_width="0dp"
-                            android:layout_height="130dp"
+                            android:layout_height="140dp"
                             android:scaleType="centerCrop"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
@@ -422,9 +409,8 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/san_francisco"
                             android:text="@string/body_freed_goods"
-                            android:textSize="14sp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView33" />
@@ -434,9 +420,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
-                            android:fontFamily="@font/san_francisco"
                             android:text="@string/person_freed_goods"
-                            android:textSize="12sp"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/textView34" />
                     </androidx.constraintlayout.widget.ConstraintLayout>
