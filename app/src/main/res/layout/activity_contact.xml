@@ -15,7 +15,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@android:color/background_light"
+            android:background="@color/colorPrimary"
             app:titleTextColor="@color/colorPrimaryDark"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
@@ -26,10 +26,7 @@
         android:id="@+id/contact_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="?attr/actionBarSize"
-        android:overScrollMode="always"
-        android:scrollIndicators="none"
-        android:scrollbars="none">
+        android:layout_marginTop="?attr/actionBarSize">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -42,11 +39,8 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:fontFamily="sans-serif"
                 android:text="Have a question or want to arrange a specific package for yourself? Fill out the form to get in touch with SFJA Media."
-                android:textAlignment="viewStart"
-                android:textColor="@android:color/black"
-                android:textSize="18sp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

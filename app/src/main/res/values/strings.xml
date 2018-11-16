@@ -37,7 +37,6 @@
     <!-- FoodieThing Page -->
 
     <string name="foodiething">FoodieThing</string>
-
     <string name="title_content">Content</string>
     <string name="title_reach">Reach</string>
     <string name="title_some_previous_clients">Some Previous clients</string>
@@ -49,8 +48,6 @@
     <string name="body_reach">FoodieThing has a lasting impression on every Instagram user that discovers the page. Currently with over 60,000 followers, the Foodie Fam is rapidly growing. @FoodieThing, on average receives over 800,000 impressions per week.</string>
     <string name="body_submissions">We love to feature good eats from all over the world. If there is a photo that you would like to us to consider posting on the FoodieThing Instagram channel please send a direct message to @FoodieThing on Instagram with the photo you would like to be featured.</string>
     <string name="body_stories">Every day FoodieThing posts a lengthy story that highlights the best of the channel. Take a food journey with the team as they post all day on @FoodieThing. Experience exclusive content, milestone achievement awards, bonus photos and even giveaways. @FoodieThing\'s daily story is not something you\'ll want to miss.</string>
-
-
 
     <!-- Links Page -->
     <string name="title_our_website">Our Website</string>

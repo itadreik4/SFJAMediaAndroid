@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity(), LinksFragment.OnFragmentInteractionLis
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
-
         super.onCreate(savedInstanceState)
         val nightModeFlags = this.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
         if (nightModeFlags == Configuration.UI_MODE_NIGHT_NO) {
