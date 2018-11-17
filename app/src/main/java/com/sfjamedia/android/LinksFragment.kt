@@ -41,15 +41,6 @@ class LinksFragment : Fragment() {
             }
         }
 
-        contentFrameLayout2.setOnClickListener {
-            startActivity(Intent(Intent.ACTION_VIEW,
-                    Uri.parse("https://sfjamedia.com/store")))
-        }
-
-        contentFrameLayout4.setOnClickListener {
-            startActivity(Intent(Intent.ACTION_VIEW,
-                    Uri.parse("https://sfjamedia.com/merch")))
-        }
     }
 
     override fun onAttach(context: Context?) {
