@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import androidx.fragment.app.Fragment
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_contact.*
@@ -27,9 +26,9 @@ class ContactFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         send_message.setOnClickListener {
-            val nameString = view.findViewById<EditText>(R.id.name_text).text.toString()
-            val emailString = view.findViewById<EditText>(R.id.email_text).text.toString()
-            val messageString = view.findViewById<EditText>(R.id.message_text).text.toString()
+            val nameString = name_text.text.toString()
+            val emailString = email_text.text.toString()
+            val messageString = message_text.text.toString()
 
             if (nameString.length < 2 || emailString.length < 6 || messageString.length < 2) {
                 Snackbar.make(activity!!.findViewById(android.R.id.content), "Please fill out the form", Snackbar.LENGTH_SHORT).show()
