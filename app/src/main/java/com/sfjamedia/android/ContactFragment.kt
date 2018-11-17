@@ -37,9 +37,9 @@ class ContactFragment : Fragment() {
                 if (emailString.startsWith("@") || emailString.endsWith("@")) {
                     Snackbar.make(activity!!.findViewById(android.R.id.content), "Please enter a valid email address", Snackbar.LENGTH_SHORT).show()
                 } else {
-                    val finalMessage = ("Name: " + nameString
-                            + "\nEmail: " + emailString
-                            + "\nMessage: " + messageString)
+                    val finalMessage = ("Name: $nameString"
+                            + "\nEmail: $emailString"
+                            + "\nMessage: $messageString")
                     val emailIntent = Intent(Intent.ACTION_SEND)
                     val aEmailList = arrayOf("inquiries@sfjamedia.com")
                     emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, aEmailList)
