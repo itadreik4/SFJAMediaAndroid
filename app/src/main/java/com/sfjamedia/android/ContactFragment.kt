@@ -7,8 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.EditText
-import android.widget.Toast
 import androidx.fragment.app.Fragment
+import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.fragment_contact.*
 
 
@@ -32,11 +32,11 @@ class ContactFragment : Fragment() {
             val messageString = view.findViewById<EditText>(R.id.message_text).text.toString()
 
             if (nameString.length < 2 || emailString.length < 6 || messageString.length < 2) {
-                Toast.makeText(context, "Please fill out the form", Toast.LENGTH_SHORT).show()
+                Snackbar.make(activity!!.findViewById(android.R.id.content), "Please fill out the form", Snackbar.LENGTH_SHORT).show()
 
             } else if (emailString.contains("@")) {
                 if (emailString.startsWith("@") || emailString.endsWith("@")) {
-                    Toast.makeText(context, "Please enter a valid email address", Toast.LENGTH_SHORT).show()
+                    Snackbar.make(activity!!.findViewById(android.R.id.content), "Please enter a valid email address", Snackbar.LENGTH_SHORT).show()
                 } else {
                     val finalMessage = ("Name: " + nameString
                             + "\nEmail: " + emailString
@@ -51,7 +51,7 @@ class ContactFragment : Fragment() {
                 }
 
             } else {
-                Toast.makeText(context, "Please enter a valid email", Toast.LENGTH_SHORT).show()
+                Snackbar.make(activity!!.findViewById(android.R.id.content), "Please enter a valid email", Snackbar.LENGTH_SHORT).show()
             }
         }
     }

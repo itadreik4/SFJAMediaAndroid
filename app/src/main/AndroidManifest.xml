@@ -32,10 +32,7 @@
             android:label="@string/contactshort"
             android:theme="@style/AppTheme.NoActionBar"
             android:parentActivityName="com.sfjamedia.android.MainActivity"/>
-        <activity android:name=".SourcesActivity"
-            android:label="@string/sources_name"
-            android:theme="@style/AppTheme"
-            android:parentActivityName=".MainActivity"/>
+
     </application>
 
 </manifest>
