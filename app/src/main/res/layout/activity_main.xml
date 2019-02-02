@@ -18,7 +18,7 @@
             android:background="@color/colorPrimary"
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:titleTextAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
             app:titleTextColor="@color/colorPrimaryDark" />
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -30,7 +30,8 @@
         android:layout_marginTop="?attr/actionBarSize"
         android:layout_marginBottom="52dp"
         app:defaultNavHost="true"
-        app:navGraph="@navigation/nav_graph"/>
+        app:navGraph="@navigation/nav_graph"
+        tools:layout="@layout/fragment_home" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"

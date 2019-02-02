@@ -51,6 +51,7 @@ class ContactFragment : Fragment() {
 
             } else {
                 Snackbar.make(activity!!.findViewById(android.R.id.content), "Please enter a valid email", Snackbar.LENGTH_SHORT).show()
+
             }
         }
     }

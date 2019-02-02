@@ -19,8 +19,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
         debug {
-            shrinkResources true
-            minifyEnabled true
+            shrinkResources false
+            minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -33,8 +33,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.0.0'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha07'
-    implementation 'android.arch.navigation:navigation-ui-ktx:1.0.0-alpha07'
+    implementation 'android.arch.navigation:navigation-fragment-ktx:1.0.0-alpha11'
+    implementation 'android.arch.navigation:navigation-ui-ktx:1.0.0-alpha11'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:0.27.0-eap13'
 }
 

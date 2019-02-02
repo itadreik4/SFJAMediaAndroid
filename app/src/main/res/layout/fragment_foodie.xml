@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:scrollbars="none">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,7 +14,7 @@
             android:id="@+id/whatsfoodiethingtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/title_what_is_foodie_thing"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
@@ -25,8 +26,8 @@
             android:id="@+id/whatsfoodiethingbody"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:text="@string/body_what_is_foodie_thing"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +51,7 @@
             android:id="@+id/contenttitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/title_content"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
@@ -62,83 +63,140 @@
             android:id="@+id/contentbody"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
             android:text="@string/body_content"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/contenttitle" />
+            app:layout_constraintTop_toBottomOf="@+id/scrollchips" />
 
-        <HorizontalScrollView
-            android:id="@+id/horizontalscroll"
+
+        <VideoView
+            android:id="@+id/videoView1"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
+            android:layout_height="600dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/divider2"
+            android:layout_marginEnd="16dp"
+            android:defaultFocusHighlightEnabled="false"
+            android:focusableInTouchMode="false"
+            android:focusedByDefault="false"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/contentbody">
+            app:layout_constraintTop_toBottomOf="@+id/contenttitle" />
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollchips"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoView1"
+            android:scrollbars="none">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
 
-                <VideoView
-                    android:id="@+id/videoView1"
-                    android:layout_width="170dp"
-                    android:layout_height="170dp"
-                    android:layout_marginStart="8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chipgroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:checkedChip="@id/chip1"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <VideoView
-                    android:id="@+id/videoView2"
-                    android:layout_width="170dp"
-                    android:layout_height="170dp"
-                    android:layout_marginStart="8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/videoView1"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <VideoView
-                    android:id="@+id/videoView3"
-                    android:layout_width="170dp"
-                    android:layout_height="170dp"
-                    android:layout_marginStart="8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/videoView2"
-                    app:layout_constraintTop_toTopOf="parent" />
-                <VideoView
-                    android:id="@+id/videoView4"
-                    android:layout_width="170dp"
-                    android:layout_height="170dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/videoView3"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:singleLine="true"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:text="Jalapeño Poppers"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        app:checkedIconVisible="true"
+                        app:chipBackgroundColor="@color/colorBackground"
+                        app:chipStrokeColor="@android:color/darker_gray"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:text="Mac &amp; Cheese"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        app:checkedIconVisible="true"
+                        app:chipBackgroundColor="@color/colorBackground"
+                        app:chipStrokeColor="@android:color/darker_gray"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:text="Cookie"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        app:checkedIconVisible="true"
+                        app:chipBackgroundColor="@color/colorBackground"
+                        app:chipStrokeColor="@android:color/darker_gray"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:text="Fruity Pebbles"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        app:checkedIconVisible="true"
+                        app:chipBackgroundColor="@color/colorBackground"
+                        app:chipStrokeColor="@android:color/darker_gray"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checkable="true"
+                        android:text="Jalapeño Poppers"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                        app:checkedIconVisible="true"
+                        app:chipBackgroundColor="@color/colorBackground"
+                        app:chipStrokeColor="@android:color/darker_gray"
+                        app:chipStrokeWidth="1dp" />
+
+                </com.google.android.material.chip.ChipGroup>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
         </HorizontalScrollView>
+
 
         <View
             android:id="@+id/divider2"
             android:layout_width="0dp"
             android:layout_height="1dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="16dp"
             android:layout_marginRight="8dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/horizontalscroll" />
+            app:layout_constraintTop_toBottomOf="@+id/contentbody" />
 
         <TextView
             android:id="@+id/reachtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/title_reach"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
@@ -150,8 +208,8 @@
             android:id="@+id/reachbody"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:text="@string/body_reach"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             app:layout_constraintEnd_toEndOf="parent"
@@ -174,7 +232,7 @@
             android:id="@+id/previousclientstitle"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/title_some_previous_clients"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
@@ -210,7 +268,7 @@
             android:id="@+id/submissionstitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/title_submissions"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
@@ -222,8 +280,8 @@
             android:id="@+id/submissionsbody"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:text="@string/body_submissions"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             app:layout_constraintEnd_toEndOf="parent"
@@ -247,7 +305,7 @@
             android:id="@+id/storiestitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/title_stories"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
@@ -259,8 +317,8 @@
             android:id="@+id/storiesbody"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="8dp"
             android:text="@string/body_stories"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"

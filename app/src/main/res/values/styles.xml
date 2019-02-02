@@ -8,6 +8,7 @@
         <item name="android:statusBarColor">@color/colorPrimary</item>
         <item name="colorControlHighlight">@color/colorPrimaryDark</item>
         <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:fontFamily">@font/nunitoregular</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -24,5 +25,11 @@
     </style>
 
     <style name="MyBaseTextViewStyle" parent="android:Widget.TextView"/>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">28sp</item>
+    </style>
+
 
 </resources>
