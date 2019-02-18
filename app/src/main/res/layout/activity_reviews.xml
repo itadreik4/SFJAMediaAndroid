@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            app:titleTextColor="@color/colorPrimaryDark" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:minWidth="500dp">
+
+                <FrameLayout
+                    android:id="@+id/frame1"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_freed_goods"
+                            android:layout_width="300dp"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/logo_freed_goods" />
+
+                        <TextView
+                            android:id="@+id/freedgoodstitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/title_freed_goods"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/image_freed_goods"
+                            app:layout_constraintStart_toStartOf="@+id/image_freed_goods"
+                            app:layout_constraintTop_toBottomOf="@+id/image_freed_goods" />
+
+                        <TextView
+                            android:id="@+id/freedgoodsbody"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/body_freed_goods"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="@+id/freedgoodstitle"
+                            app:layout_constraintStart_toStartOf="@+id/freedgoodstitle"
+                            app:layout_constraintTop_toBottomOf="@+id/freedgoodstitle" />
+
+                        <TextView
+                            android:id="@+id/freedgoodsperson"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="\@FreedGoods"
+                            app:layout_constraintEnd_toEndOf="@+id/freedgoodsbody"
+                            app:layout_constraintStart_toStartOf="@+id/freedgoodsbody"
+                            app:layout_constraintTop_toBottomOf="@+id/freedgoodsbody" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/frame2"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/frame1"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_donut_digest"
+                            android:layout_width="300dp"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/logo_donut_digest" />
+
+                        <TextView
+                            android:id="@+id/donutdigesttitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/title_donut_digest"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/image_donut_digest"
+                            app:layout_constraintStart_toStartOf="@+id/image_donut_digest"
+                            app:layout_constraintTop_toBottomOf="@+id/image_donut_digest" />
+
+                        <TextView
+                            android:id="@+id/donutdigestbody"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/body_freed_goods"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="@+id/donutdigesttitle"
+                            app:layout_constraintStart_toStartOf="@+id/donutdigesttitle"
+                            app:layout_constraintTop_toBottomOf="@+id/donutdigesttitle" />
+
+                        <TextView
+                            android:id="@+id/donutdigestperson"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/person_donut_digest"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/donutdigestbody"
+                            app:layout_constraintTop_toBottomOf="@+id/donutdigestbody" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="\@DonutDigest"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/donutdigestperson"
+                            app:layout_constraintTop_toBottomOf="@+id/donutdigestperson" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </FrameLayout>
+
+
+                <FrameLayout
+                    android:id="@+id/frame3"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/frame2"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_boston_foodie"
+                            android:layout_width="300dp"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/logo_boston_foodie" />
+
+                        <TextView
+                            android:id="@+id/bostonfoodietitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/title_donut_digest"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/image_boston_foodie"
+                            app:layout_constraintStart_toStartOf="@+id/image_boston_foodie"
+                            app:layout_constraintTop_toBottomOf="@+id/image_boston_foodie" />
+
+                        <TextView
+                            android:id="@+id/bostonfoodiebody"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/body_freed_goods"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="@+id/bostonfoodietitle"
+                            app:layout_constraintStart_toStartOf="@+id/bostonfoodietitle"
+                            app:layout_constraintTop_toBottomOf="@+id/bostonfoodietitle" />
+
+                        <TextView
+                            android:id="@+id/bostonfoodieperson"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/person_donut_digest"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/bostonfoodiebody"
+                            app:layout_constraintTop_toBottomOf="@+id/bostonfoodiebody" />
+
+                        <TextView
+                            android:id="@+id/bostonfoodieig"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="\@Boston_Foodie"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/bostonfoodieperson"
+                            app:layout_constraintTop_toBottomOf="@+id/bostonfoodieperson" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/frame4"
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="24dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/frame3"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/image_foodies_hero"
+                            android:layout_width="300dp"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/logo_foodies_hero" />
+
+                        <TextView
+                            android:id="@+id/foodiesherotitle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="Foodies Hero"
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            app:layout_constraintEnd_toEndOf="@+id/image_foodies_hero"
+                            app:layout_constraintStart_toStartOf="@+id/image_foodies_hero"
+                            app:layout_constraintTop_toBottomOf="@+id/image_foodies_hero" />
+
+                        <TextView
+                            android:id="@+id/foodiesherobody"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text=""
+                            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="@+id/bostonfoodietitle"
+                            app:layout_constraintStart_toStartOf="@+id/bostonfoodietitle"
+                            app:layout_constraintTop_toBottomOf="@+id/bostonfoodietitle" />
+
+                        <TextView
+                            android:id="@+id/bostonfoodieperson"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:text="@string/person_donut_digest"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/bostonfoodiebody"
+                            app:layout_constraintTop_toBottomOf="@+id/bostonfoodiebody" />
+
+                        <TextView
+                            android:id="@+id/bostonfoodieig"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="\@Boston_Foodie"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/bostonfoodieperson"
+                            app:layout_constraintTop_toBottomOf="@+id/bostonfoodieperson" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </FrameLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </HorizontalScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

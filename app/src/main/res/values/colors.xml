@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#eee</color>
+    <color name="colorPrimary">#EEE</color>
     <color name="colorPrimaryDark">#C9432C</color>
     <color name="colorAccent">#747474</color>
-    <color name="colorBackground">#fff</color>
+    <color name="colorBackground">#FFF</color>
+    <color name="colorFoodieThing">#ff80dc</color>
+    <color name="colorFoodieThingBackground">#FFEFF9</color>
 </resources>
 

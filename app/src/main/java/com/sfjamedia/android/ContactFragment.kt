@@ -30,15 +30,17 @@ class ContactFragment : Fragment() {
             val emailString = email_text.text.toString()
             val messageString = message_text.text.toString()
 
-            if (nameString.length < 2 || emailString.length < 6 || messageString.length < 2) {
-                Snackbar.make(activity!!.findViewById(android.R.id.content), "Please fill out the form", Snackbar.LENGTH_SHORT).show()
-
+            if (nameString.isEmpty()) {
+                Snackbar.make(activity!!.findViewById(android.R.id.content), "Please fill out the name field", Snackbar.LENGTH_SHORT).show()
+            } else if (emailString.length < 4) {
+                Snackbar.make(activity!!.findViewById(android.R.id.content), "Please enter a valid email", Snackbar.LENGTH_SHORT).show()
+            } else if (messageString.length < 6) {
+                Snackbar.make(activity!!.findViewById(android.R.id.content), "Please enter a longer message", Snackbar.LENGTH_SHORT).show()
             } else if (emailString.contains("@")) {
                 if (emailString.startsWith("@") || emailString.endsWith("@")) {
-                    Snackbar.make(activity!!.findViewById(android.R.id.content), "Please enter a valid email address", Snackbar.LENGTH_SHORT).show()
+                    Snackbar.make(activity!!.findViewById(android.R.id.content), "Please enter a valid email", Snackbar.LENGTH_SHORT).show()
                 } else {
-                    val finalMessage = ("Name: $nameString"
-                            + "\nEmail: $emailString"
+                    val finalMessage = ("Name: $nameString" + "\nEmail: $emailString"
                             + "\nMessage: $messageString")
                     val emailIntent = Intent(Intent.ACTION_SEND)
                     val aEmailList = arrayOf("inquiries@sfjamedia.com")
@@ -51,7 +53,6 @@ class ContactFragment : Fragment() {
 
             } else {
                 Snackbar.make(activity!!.findViewById(android.R.id.content), "Please enter a valid email", Snackbar.LENGTH_SHORT).show()
-
             }
         }
     }

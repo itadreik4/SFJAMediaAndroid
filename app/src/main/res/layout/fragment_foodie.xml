@@ -2,13 +2,15 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/foodie_scroll"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:scrollbars="none">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/colorFoodieThingBackground">
 
         <TextView
             android:id="@+id/whatsfoodiethingtitle"
@@ -39,9 +41,9 @@
             android:id="@+id/divider1"
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_marginLeft="8dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginEnd="16dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -75,8 +77,8 @@
 
         <VideoView
             android:id="@+id/videoView1"
-            android:layout_width="match_parent"
-            android:layout_height="600dp"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
@@ -89,13 +91,14 @@
 
 
         <HorizontalScrollView
+            android:id="@+id/scrollchips"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/scrollchips"
             android:layout_marginTop="16dp"
+            android:scrollbars="none"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/videoView1"
-            android:scrollbars="none">
+            app:layout_constraintTop_toBottomOf="@+id/videoView1">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
@@ -107,7 +110,9 @@
                     android:id="@+id/chipgroup"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
                     app:checkedChip="@id/chip1"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:singleLine="true"
@@ -118,60 +123,70 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checkable="true"
+                        android:clickable="true"
                         android:text="Jalapeño Poppers"
                         android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                         app:checkedIconVisible="true"
-                        app:chipBackgroundColor="@color/colorBackground"
+                        app:chipBackgroundColor="#fff"
                         app:chipStrokeColor="@android:color/darker_gray"
-                        app:chipStrokeWidth="1dp" />
+                        app:chipStrokeWidth="1dp"
+                        app:rippleColor="@color/colorFoodieThing" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/chip2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checkable="true"
+                        android:clickable="true"
                         android:text="Mac &amp; Cheese"
                         android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                         app:checkedIconVisible="true"
                         app:chipBackgroundColor="@color/colorBackground"
                         app:chipStrokeColor="@android:color/darker_gray"
-                        app:chipStrokeWidth="1dp" />
+                        app:chipStrokeWidth="1dp"
+                        app:rippleColor="@color/colorFoodieThing" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/chip3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checkable="true"
+                        android:clickable="true"
                         android:text="Cookie"
                         android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                         app:checkedIconVisible="true"
                         app:chipBackgroundColor="@color/colorBackground"
                         app:chipStrokeColor="@android:color/darker_gray"
-                        app:chipStrokeWidth="1dp" />
+                        app:chipStrokeWidth="1dp"
+                        app:rippleColor="@color/colorFoodieThing" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/chip4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checkable="true"
+                        android:clickable="true"
                         android:text="Fruity Pebbles"
                         android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                         app:checkedIconVisible="true"
                         app:chipBackgroundColor="@color/colorBackground"
                         app:chipStrokeColor="@android:color/darker_gray"
-                        app:chipStrokeWidth="1dp" />
+                        app:chipStrokeWidth="1dp"
+                        app:rippleColor="@color/colorFoodieThing" />
 
                     <com.google.android.material.chip.Chip
                         android:id="@+id/chip5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:checkable="true"
+                        android:clickable="true"
                         android:text="Jalapeño Poppers"
                         android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
                         app:checkedIconVisible="true"
                         app:chipBackgroundColor="@color/colorBackground"
                         app:chipStrokeColor="@android:color/darker_gray"
-                        app:chipStrokeWidth="1dp" />
+                        app:chipStrokeWidth="1dp"
+                        app:rippleColor="@color/colorFoodieThing" />
 
                 </com.google.android.material.chip.ChipGroup>
 
@@ -184,9 +199,9 @@
             android:id="@+id/divider2"
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_marginLeft="8dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginEnd="16dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -220,49 +235,14 @@
             android:id="@+id/divider3"
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_marginLeft="8dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginEnd="16dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/reachbody" />
 
-        <TextView
-            android:id="@+id/previousclientstitle"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="16dp"
-            android:text="@string/title_some_previous_clients"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/divider3" />
-
-        <ImageView
-            android:id="@+id/previousclientspic"
-            android:layout_width="0dp"
-            android:layout_height="157dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/previousclientstitle"
-            app:srcCompat="@drawable/clients"
-            tools:ignore="ContentDescription" />
-
-        <View
-            android:id="@+id/divider4"
-            android:layout_width="0dp"
-            android:layout_height="1dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="8dp"
-            android:background="@android:color/darker_gray"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/previousclientspic" />
 
         <TextView
             android:id="@+id/submissionstitle"
@@ -274,7 +254,7 @@
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+            app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
         <TextView
             android:id="@+id/submissionsbody"
@@ -293,9 +273,9 @@
             android:id="@+id/divider5"
             android:layout_width="0dp"
             android:layout_height="1dp"
-            android:layout_marginLeft="8dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginEnd="16dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -322,10 +302,22 @@
             android:layout_marginBottom="8dp"
             android:text="@string/body_stories"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/storiestitle" />
+
+        <ImageView
+            android:id="@+id/imageft"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/colorFoodieThingBackground"
+            android:scaleType="fitStart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/storiesbody"
+            app:srcCompat="@drawable/image_ft">
+
+        </ImageView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

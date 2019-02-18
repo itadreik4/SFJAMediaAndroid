@@ -1,11 +1,13 @@
 package com.sfjamedia.android
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import kotlinx.android.synthetic.main.fragment_home.*
 
 
 class HomeFragment : Fragment() {
@@ -18,6 +20,9 @@ class HomeFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        reviewframe.setOnClickListener {
+            startActivity(Intent(activity, ReviewsActivity::class.java))
+        }
     }
 
     override fun onAttach(context: Context?) {

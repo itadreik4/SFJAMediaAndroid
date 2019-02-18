@@ -32,6 +32,9 @@
             android:label="@string/contactshort"
             android:theme="@style/AppTheme.NoActionBar"
             android:parentActivityName="com.sfjamedia.android.MainActivity"/>
+        <activity android:name=".ReviewsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".MainActivity"/>
 
     </application>
 

@@ -1,6 +1,7 @@
 package com.sfjamedia.android
 
 import android.content.res.Configuration
+import android.graphics.Color
 import android.os.Bundle
 import android.util.DisplayMetrics
 import android.view.View
@@ -17,16 +18,13 @@ class MainActivity : AppCompatActivity(), LinksFragment.OnFragmentInteractionLis
         HomeFragment.OnFragmentInteractionListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM)
         super.onCreate(savedInstanceState)
         val nightModeFlags = this.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK
         if (nightModeFlags == Configuration.UI_MODE_NIGHT_NO) {
             window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         }
-        val displaymetrics = DisplayMetrics()
-        windowManager.defaultDisplay.getMetrics(displaymetrics)
-        val h = displaymetrics.heightPixels
-        val w = displaymetrics.widthPixels
+
         setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
         bottom_nav.setupWithNavController(Navigation.findNavController(this, R.id.nav_host_fragment))
